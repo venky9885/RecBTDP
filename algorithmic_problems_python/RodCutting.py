@@ -12,7 +12,8 @@ class RodCutting:
         for i in range(1, len(self.p)):
             for j in range(1, self.n+1):
                 if i <= j:
-                    self.S[i][j] = max(self.S[i-1][j], self.p[i]+self.S[i][j-i])
+                    self.S[i][j] = max(
+                        self.S[i-1][j], self.p[i]+self.S[i][j-i])
                 else:
                     self.S[i][j] = self.S[i-1][j]
 
@@ -35,6 +36,6 @@ class RodCutting:
 
 if __name__ == '__main__':
 
-    problem = RodCutting(5, [0, 2, 5, 7, 3, 9])
+    problem = RodCutting(8, [1, 5, 8, 9, 10, 17, 17, 20])
     problem.solve()
     problem.show_result()

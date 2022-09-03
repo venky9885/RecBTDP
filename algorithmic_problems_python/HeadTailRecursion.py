@@ -1,20 +1,27 @@
-
-def tail(n):
-
-    print('Calling tail with n=' + str(n))
-
-    # BASE CASE
-    if n == 0:
-        return
-
-    # first of all we do some operations
-    # operation = print()
-    print(n)
-
-    # make the recursive function call
-    tail(n-1)
+# def ted(ai, ae):
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# n = int(input())
 
 
+# def tail(n):
+
+#     print('Calling tail with n=' + str(n))
+
+#     # BASE CASE
+#     if n == 0:
+#         return
+
+#     # first of all we do some operations
+#     # operation = print()
+#     print(n)
+
+#     # make the recursive function call
+#     tail(n-1)
+
+
+# tail(5)
 def head(n):
 
     print('Calling head() with n=' + str(n))

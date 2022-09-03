@@ -50,7 +50,6 @@ class QuickSelect:
         return self.nums[pivot_index]
 
 
-x = [1, 2, -5, 10, 100, -7, 3, 4]
+x = [3, 2, 3, 1, 2, 4, 5, 5, 6]
 select = QuickSelect(x)
-print(select.run(2))
-
+print(select.run(4))

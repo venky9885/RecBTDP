@@ -1,9 +1,11 @@
+
 class MazeProblem:
 
     def __init__(self, maze_matrix):
         self.maze_matrix = maze_matrix
         self.maze_size = len(maze_matrix)
-        self.solution_matrix = [[' - ' for _ in range(self.maze_size)] for _ in range(self.maze_size)]
+        self.solution_matrix = [
+            [' - ' for _ in range(self.maze_size)] for _ in range(self.maze_size)]
         self.moves = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
     def solve_problem(self):

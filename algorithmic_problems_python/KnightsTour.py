@@ -1,4 +1,5 @@
 
+#!DONE
 class KnightsTour:
 
     def __init__(self, board_size):
@@ -6,7 +7,8 @@ class KnightsTour:
         # possible horizontal components of the moves
         self.x_moves = [2, 1, -1, -2, -2, -1, 1, 2]
         self.y_moves = [1, 2, 2, 1, -1, -2, -2, -1]
-        self.solution_matrix = [[-1 for _ in range(self.board_size)] for _ in range(self.board_size)]
+        self.solution_matrix = [
+            [-1 for _ in range(self.board_size)] for _ in range(self.board_size)]
 
     def solve_problem(self):
 
@@ -35,6 +37,7 @@ class KnightsTour:
             if self.is_valid_move(next_x, next_y):
                 # it is a valid step so we can update the solution_matrix
                 self.solution_matrix[next_x][next_y] = step_counter
+                # print(step_counter)
 
                 if self.solve(step_counter+1, next_x, next_y):
                     return True

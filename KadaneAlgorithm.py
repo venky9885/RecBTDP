@@ -1,6 +1,7 @@
 
 
 # O(N)
+
 def kadane(nums):
     local_max = nums[0]
     global_max = nums[0]

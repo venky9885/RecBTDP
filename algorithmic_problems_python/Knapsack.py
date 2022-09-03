@@ -1,4 +1,5 @@
 
+
 class KnapsackProblem:
 
     def __init__(self, n, M, w, v):
@@ -39,7 +40,7 @@ if __name__ == '__main__':
     knapsack_capacity = 7
     weights = [0, 1, 3, 4, 5]
     profits = [0, 1, 4, 5, 7]
-    knapsack = KnapsackProblem(num_of_items, knapsack_capacity, weights, profits)
+    knapsack = KnapsackProblem(
+        num_of_items, knapsack_capacity, weights, profits)
     knapsack.solve()
     knapsack.show_result()
-
